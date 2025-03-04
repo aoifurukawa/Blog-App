@@ -13,6 +13,10 @@ use App\Http\Controllers\UserController;
 
 Auth::routes();
 
+Route::get('/mlb', function(){
+    return view('mlb.show');
+});
+
 Route::group(['middleware' => 'auth'], function (){
     Route::get('/', [PostController::class, 'index'])->name('index');
 
