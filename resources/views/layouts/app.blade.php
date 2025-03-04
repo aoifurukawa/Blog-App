@@ -16,7 +16,7 @@
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
-<body>
+<body style="background-image: url('{{ asset('images/images.jpg') }}'); background-size: cover; background-position: center;">
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
